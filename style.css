@@ -22,7 +22,7 @@ h1 {
 
 h2 {
     width: 90%;
-    background: #051C2C;
+    background: #14293A;
 
     padding: 5px;
     margin-top: 50px;
@@ -46,7 +46,7 @@ strong {
 }
 
 #subheadline {
-    text-decoration: aqua;
+    font-weight: bolder;
 }
 
 #footer {
@@ -61,6 +61,7 @@ strong {
 
 .container-centered {
     text-align: center;
+    padding: 20px;
 }
 
 .item {
@@ -68,4 +69,8 @@ strong {
 
     margin-left: auto;
     margin-right: auto;
+}
+
+.block-text {
+    text-align: justify;
 }
