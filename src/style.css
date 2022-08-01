@@ -8,6 +8,7 @@ body {
     max-width: 600px;
 
     font-family: "Avenir Next";
+    hyphens: auto;
     color: #051C2C;
 }
 
