@@ -1,0 +1,10 @@
+services:
+  website:
+    build: .
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - "/etc/letsencrypt/live/max-schluer.de/cert.pem:/etc/nginx/certs/cert.pem"
+      - "/etc/letsencrypt/live/max-schluer.de/privkey.pem:/etc/nginx/certs/privkey.pem"
+    restart: unless-stopped
