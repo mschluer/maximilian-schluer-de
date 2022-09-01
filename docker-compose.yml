@@ -10,3 +10,4 @@ services:
       - "/etc/letsencrypt/live/max-schluer.de-0001/privkey.pem:/etc/nginx/certs/privkey.pem"
       - "./ssl-challenge/:/etc/nginx/html/"
     restart: unless-stopped
+    
