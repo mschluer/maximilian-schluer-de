@@ -17,7 +17,10 @@
 <body>
 
 <div class="container-centered">
-    <img src="logo.svg" id="logo" type="image/svg+xml" width="70%">
+    <picture id="logo">
+        <source srcset="logo-dark.svg" type="image/svg+xml" media="(prefers-color-scheme: dark)" width="70%">
+        <img src="logo.svg" type="image/svg+xml" width="70%">
+    </picture>
 </div>
 
 <div class="spacer"></div>
