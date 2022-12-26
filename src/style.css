@@ -1,4 +1,27 @@
 
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #051C2C;
+        color: darkgray;
+    }
+
+    h2 {
+        background: darkgray;
+        color: #14293A;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        color: #051C2C;
+    }
+
+    h2 {
+        background: #14293A;
+        color: white;
+    }
+}
+
 body {
     margin-left: auto;
     margin-right: auto;
@@ -9,7 +32,6 @@ body {
 
     font-family: "Avenir Next";
     hyphens: auto;
-    color: #051C2C;
 }
 
 a {
@@ -23,7 +45,6 @@ h1 {
 
 h2 {
     width: 90%;
-    background: #14293A;
 
     padding: 5px;
     margin-top: 50px;
@@ -34,7 +55,6 @@ h2 {
 
     text-align: center;
     font-weight: normal;
-    color: white;
 }
 
 h3 {
