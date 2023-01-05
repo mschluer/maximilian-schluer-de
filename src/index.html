@@ -14,6 +14,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+<script>
+    async function showArrowBrackets(elementID) {
+        document.styleSheets[0].insertRule("#" + elementID + ":before { content: '> '; font-weight: 900; } ");
+        document.styleSheets[0].insertRule("#" + elementID + ":after { content: ' <'; font-weight: 900; } ");
+    }
+
+    async function hideArrowBrackets(elementID) {
+        document.styleSheets[0].deleteRule("#" + elementID + ":before");
+        document.styleSheets[0].deleteRule("#" + elementID + ":after");
+    }
+</script>
+
 <body>
 
 <div class="container-centered">
@@ -28,8 +40,9 @@
     <p>B. Sc. Angewandte Informatik – Software Systems Engineering</p>
 
     <p>Maximilian Schluer GmbH<br>Vielohweg 119<br>D-22455 Hamburg</p>
-    <p><a href="tel:+494033453660">+49 40 / 3345 3660</a><br><a href="tel:+491741027977">+49 174 / 10 27 977</a></p>
-    <p><a href="mailto:kontakt@maximilian-schluer.de">kontakt@maximilian-schluer.de</a></p>
+    <p><a href="tel:+494033453660" onmouseover="showArrowBrackets('phoneLink')" onmouseout="hideArrowBrackets('phoneLink')" id="phoneLink">+49 40 / 3345 3660</a><br><a href="tel:+491741027977"onmouseover="showArrowBrackets('mobileLink')" onmouseout="hideArrowBrackets('mobileLink')" id="mobileLink">+49 174 / 10 27 977</a></p>
+    <p><a href="mailto:kontakt@maximilian-schluer.de" onmouseover="showArrowBrackets('mailLink')" onmouseout="hideArrowBrackets('mailLink')" id="mailLink">kontakt@maximilian-schluer.de</a></p>
+    <p><a href="https://maximilian-schluer.com" onmouseover="showArrowBrackets('englishLink')" onmouseout="hideArrowBrackets('englishLink')" id="englishLink">English Version</a></p>
 </div>
 
 <div class="container-centered">
@@ -64,7 +77,7 @@
     </div>
 
     <div class="item">
-        <p><strong>Vollständiges Profil:</strong><br><a href="profil.pdf" download="cv_maximilian_schluer.pdf" target="_blank">Download</a></p>
+        <p><strong>Vollständiges Profil:</strong><br><a href="profil.pdf" download="cv_maximilian_schluer.pdf" target="_blank" onmouseover="showArrowBrackets('downloadLink')" onmouseout="hideArrowBrackets('downloadLink')" id="downloadLink">Download</a></p>
     </div>
 </div>
 
