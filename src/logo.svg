@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="955.97" height="92.56" viewBox="0 0 955.97 92.56">
   <defs>
     <style>
-      @media (prefers-color-scheme: dark) {
+      @media ( prefers-color-scheme: dark ) {
         .cls-1 {
           fill: #a9a9a9;
         }
       }
 
-      @media (prefers-color-scheme: light) {
+      @media ( prefers-color-scheme: light ) {
         .cls-1 {
           fill: #051c2c;
         }
